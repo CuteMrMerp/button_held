@@ -1,1 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="F+lro@ItN0U_]1xvhx^B">complete</variable></variables><block type="pxt-on-start" id="F8MmH)KuiRL](IEiL0$6" x="0" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="F+lro@ItN0U_]1xvhx^B">complete</variable></variables><block type="pxt-on-start" id="F8MmH)KuiRL](IEiL0$6" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="DI5.aepULd$A/H{R8vGq"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # # # # # 
+        # . . . # 
+        # . . . #
+        `</field></block></statement></block><block type="device_forever" id="I2Rzx^sy3(M4k?XI-d+C" x="117" y="625"><statement name="HANDLER"><block type="controls_if" id="5dmfp=FW7#G95spg?6e2"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="6dP9:@#jOvC=dN/~u,t^"><field name="BOOL">TRUE</field></shadow><block type="ifbuttonisheld" id="xo91QKFI2D=C@f~{2kx-"><field name="button">Button.A</field><value name="dur"><shadow type="timePicker" id="dt$/~[h%afoS.padCd:a"><field name="ms">1000</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="Ua:![)JET#-!liwXj-9n"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field></block></statement></block></statement></block></xml>
