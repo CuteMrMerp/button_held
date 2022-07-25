@@ -1,15 +1,15 @@
-namespace ButtonHeld {
+//&color="#42f598"
+namespace IsButtonHeld {
     /**
-    *If a button is held when this
-    *is run, it will run the following
-    *code. Otherwise, it will not.
+    *Outputs true if the button is pressed for the specified time.
     */
     //% blockId=ifbuttonisheld
-    //% block="if $button held for $dur (use increments of 10ms)"
+    //% block="check if $button is held for $dur and wait"
     //% dur.shadow="timePicker"
     //% button.shadow="buttonPicker"
+    //% draggableParameters
     //% handlerStatement
-    export function held(dur: number, button: Button, handler: () => void) {
+    export function held(dur: number, button: Button): boolean {
         let complete = true
         for (let index = 0; index <= dur; index += 10) {
             basic.pause(10)
@@ -17,11 +17,15 @@ namespace ButtonHeld {
 
             } else {
                 complete = false
+                return(false)
                 break;
             }
         }
         if (complete) {
-            handler()
+            return (true)
+        }
+        else{
+            return (true)
         }
     }
 }
